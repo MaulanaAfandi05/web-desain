@@ -1,0 +1,15 @@
+include componen/pug/_componen.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        block navigasi 
+            -data_link = ['home','about','blog','contact']
+            +navigasi(data__link)
+        block header 
+        block content 
+        block footer 
+            +footer(....,....)
